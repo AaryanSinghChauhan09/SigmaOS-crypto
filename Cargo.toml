@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-crypto"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Cryptographic primitives and libraries"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-crypto"
+readme = "README.md"
+keywords = ["crypto", "cryptography", "security"]
+categories = ["cryptography"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
