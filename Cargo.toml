@@ -1,17 +1,10 @@
 [package]
-name = "sigmaos-crypto"
+name = "sigmaos_crypto"
 version = "0.1.0"
 edition = "2021"
-authors = ["SigmaOS Project"]
-description = "Cryptographic primitives and libraries"
-license = "GPL-3.0-or-later"
-repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-crypto"
-readme = "README.md"
-keywords = ["crypto", "cryptography", "security"]
-categories = ["cryptography"]
+license = "MIT"
+description = "SigmaOS crypto component inspired by Linux Mint / Omarchy / Arch Linux."
 
-[dependencies]
-sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
-
-[profile.release]
-opt-level = 3
+[lib]
+name = "sigmaos_crypto"
+path = "src/lib.rs"
