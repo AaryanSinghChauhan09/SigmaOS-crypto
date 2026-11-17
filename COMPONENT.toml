@@ -3,12 +3,12 @@ name = "SigmaOS-crypto"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "crypto component"
+description = "Cryptographic primitives and libraries for the SigmaOS project."
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
