@@ -7,6 +7,9 @@
 
 #![forbid(unsafe_code)]
 
+/// Cryptography module.
+pub mod sigmacrypto;
+
 use std::fmt;
 /// Errors for `ToolError` operations. Fail-fast: invalid input is rejected.
 #[derive(Debug, Clone, PartialEq, Eq)]
